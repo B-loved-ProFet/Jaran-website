@@ -11,10 +11,13 @@
   },
   "dependencies": {
     "astro": "^1.1.6",
+    "daisyui": "^2.27.0",
     "html-validate": "^7.4.0"
   },
   "devDependencies": {
+    "@astrojs/react": "^1.1.2",
     "@astrojs/sitemap": "^1.0.0",
-    "@astrojs/tailwind": "^1.0.0"
+    "@astrojs/tailwind": "^1.0.0",
+    "react-dom": "^18.2.0"
   }
 }

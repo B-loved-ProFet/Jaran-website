@@ -10,7 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.1.6"
+    "astro": "^1.1.6",
+    "html-validate": "^7.4.0"
   },
   "devDependencies": {
     "@astrojs/sitemap": "^1.0.0",

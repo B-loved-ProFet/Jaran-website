@@ -1,14 +1,17 @@
 # Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+ 
+Directory and file structure:
 
 ```
-/
 ├── public/
-│   └── favicon.svg
+│   └── logo-stre.png
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   ├── CardMain.astro
+|   |   ├── Contact.astro
+|   |   ├── ContactToast.astro
+|   |   ├── Footer.astro
+|   |   └── Nav.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/

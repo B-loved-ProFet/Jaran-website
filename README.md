@@ -1,14 +1,17 @@
-# Website for private detective firm
-
-## Project Structure
+# Project Structure
+ 
+Directory and file structure:
 
 ```
-/
 ├── public/
-│   └── favicon.svg
+│   └── logo-stre.png
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   ├── CardMain.astro
+|   |   ├── Contact.astro
+|   |   ├── ContactToast.astro
+|   |   ├── Footer.astro
+|   |   └── Nav.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
@@ -16,7 +19,13 @@
 └── package.json
 ```
 
-## Commands
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 

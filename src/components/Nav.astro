@@ -1,0 +1,78 @@
+<nav id="mynav" class="fixed w-full z-10 top-0 bg-stone-900">
+  <div
+    class="w-full xl:w-5/6 mx-auto flex flex-wrap items-center justify-between mt-0 py-3"
+  >
+    <div class="ml-10">
+      <a href="#">
+        <img src="logo-stare.png" alt="logo" class="ml-16 lg:ml-0 w-3/4 xl:w-full" />
+      </a>
+    </div>
+
+    <div class="block xl:hidden pr-4">
+      <button
+        id="nav-toggle"
+        class="flex items-center px-4 mx-4 py-3 border rounded text-gray-500 border-gray-500 hover:text-gray-100 hover:border-grey-100 appearance-none focus:outline-none"
+      >
+        <svg
+          class="fill-current h-3 w-3"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div
+      class="hidden w-full items-center flex-grow xl:flex xl:items-center xl:w-auto  mt-2 xl:mt-0 bg-stone-900 z-20"
+      id="nav-content"
+    >
+      <ul
+        class="list-reset xl:flex xl:text-base justify-end flex-1 text-end text-xl"
+      >
+        <li class="mr-3 my-3 xl:w-28 place-self-center">
+          <a
+            class="inline-block text-white no-underline hover:text-gray-100 py-2 px-4"
+            href="#">Detektyw</a
+          >
+        </li>
+        <li class="mr-3 my-3 xl:w-28 place-self-center">
+          <a
+            class="inline-block text-white no-underline hover:text-gray-100 py-2 px-4"
+            href="#">Windykacja</a
+          >
+        </li>
+        <li class="mr-3 my-3 xl:w-28 place-self-center">
+          <a
+            class="inline-block text-white no-underline hover:text-gray-100 py-2 px-4"
+            href="#">Informacja Gospodarcza</a
+          >
+        </li>
+        <li class="mr-3 my-3 xl:w-28 place-self-center">
+          <a
+            class="inline-block text-white no-underline hover:text-gray-100 py-2 px-4"
+            href="#">Ochrona biznesu</a
+          >
+        </li>
+        <li class="mr-3 my-3 xl:w-28 place-self-center">
+          <a
+            class="inline-block text-white no-underline hover:text-gray-100 py-2 px-4"
+            href="#">Cennik</a
+          >
+        </li>
+        <li class="mr-3 my-3 xl:w-28 place-self-center">
+          <a
+            class="inline-block text-white no-underline hover:text-gray-100 py-2 px-4"
+            href="#">Kontakt</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.getElementById("nav-toggle").onclick = function () {
+    document.getElementById("nav-content").classList.toggle("hidden");
+  };
+</script>

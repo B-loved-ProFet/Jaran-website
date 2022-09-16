@@ -6,6 +6,9 @@ module.exports = {
 			'RussianVelvet': '#1F0F53',
 			'NavajoWhite': '#FFDB99'
 		},
+		fontFamily: {
+			'mine': '',
+		},
 		extend: {},
 	},
 	plugins: [],

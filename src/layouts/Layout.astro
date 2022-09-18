@@ -1,5 +1,6 @@
 ---
 import Contact from '../components/Contact.astro';
+import ContactToast from '../components/ContactToast.astro';
 import Footer from '../components/Footer.astro';
 import Nav from '../components/Nav.astro';
 export interface Props {
@@ -20,6 +21,7 @@ const { title } = Astro.props;
 	<body class="font-[Roboto]">
 		<Nav></Nav>
 		<slot />
+		<ContactToast></ContactToast>
 		<Contact></Contact>
 		<Footer></Footer>
 	</body>

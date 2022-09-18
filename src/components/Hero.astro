@@ -1,17 +1,19 @@
-<section class="px-4 pt-36 text-xl bg-gray-900 box h-full lg:pt-24">
-  <div class="lg:mt-24 items-center lg:flex">
-    <div class="w-full text-center ">
+<header class="px-4 pt-44 xl:pt-52 text-xl bg-gray-900 box h-full">
+  <div class="items-center">
+    <div class="w-full text-center">
       <h1
-        class="text-5xl font-extrabold bg-clip-text text-gray-300 pb-8 md:max-w-2xl mx-auto"
+        class="text-5xl font-medium text-gray-200 pb-8 md:max-w-3xl mx-auto max-w-xl tracking-normal leading-tight"
       >
-        Prywatne biuro detektywistyczne <span>JARAN</span>
+        Prywatny detektyw,<br />Biuro detektywistyczne <span class="uppercase"
+          >jaran</span
+        >
       </h1>
 
       <p
-        class="max-w-2xl mx-auto mt-4 sm:leading-relaxed sm:text-xl text-gray-300"
+        class="max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto mt-4 text-lg text-gray-200 font-light tracking-wide"
       >
         Świadczymy usługi detektywistyczne i windykacyjne dla osób prywatnych
-        oraz podmiotów gospodarczych. Poufność, profesjonalizm, 15-letnie
+        oraz podmiotów gospodarczych. Poufność, profesjonalizm, ponad 15-letnie
         doświadczenie oraz indywidualne podejście do klienta to nasze atuty.
         Oferujemy pomoc w każdej sprawie. Sprawa Klienta staje się naszą wspólną
         sprawą.
@@ -21,19 +23,21 @@
         <button
           type="button"
           id="form_focus"
-          class="block px-8 py-3 font-medium text-white bg-blue-600 border border-blue-600 rounded w-auto active:text-opacity-75 hover:bg-transparent"
+          class="block px-8 py-3 font-medium text-white bg-gradient-to-r from-blue-900 to-blue-600 rounded-md
+           transition-opacity ease-out duration-300 hover:opacity-70"
         >
           skontaktuj się z nami
         </button>
       </div>
     </div>
   </div>
-</section>
+</header>
+
 <script>
   document.getElementById("form_focus").addEventListener("click", () => {
-  document.querySelector('#contact-form-name').scrollIntoView({
-        behavior: 'smooth',
-        block: "center"
+    document.querySelector("#contact-form-name").scrollIntoView({
+      behavior: "smooth",
+      block: "center",
     });
-});
+  });
 </script>

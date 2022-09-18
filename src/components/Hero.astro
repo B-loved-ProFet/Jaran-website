@@ -1,14 +1,14 @@
-<section class="px-4 pt-36 text-xl bg-gray-900 box h-full lg:pt-24 lg:pb-10">
-  <div class="lg:px-0 mx-auto lg:mt-24 lg:items-center lg:flex">
-    <div class="max-full mx-auto text-center">
+<section class="px-4 pt-36 text-xl bg-gray-900 box h-full lg:pt-24">
+  <div class="lg:mt-24 items-center lg:flex">
+    <div class="w-full text-center ">
       <h1
-        class="text-5xl font-extrabold text-transparent text-gray-300 pb-8 md:max-w-xl mx-auto"
+        class="text-5xl font-extrabold bg-clip-text text-gray-300 pb-8 md:max-w-2xl mx-auto"
       >
         Prywatne biuro detektywistyczne <span>JARAN</span>
       </h1>
 
       <p
-        class="max-w-2xl mx-auto mt-4 leading-relaxed text-xl text-gray-300"
+        class="max-w-2xl mx-auto mt-4 sm:leading-relaxed sm:text-xl text-gray-300"
       >
         Świadczymy usługi detektywistyczne i windykacyjne dla osób prywatnych
         oraz podmiotów gospodarczych. Poufność, profesjonalizm, 15-letnie
@@ -29,3 +29,11 @@
     </div>
   </div>
 </section>
+<script>
+  document.getElementById("form_focus").addEventListener("click", () => {
+  document.querySelector('#contact-form-name').scrollIntoView({
+        behavior: 'smooth',
+        block: "center"
+    });
+});
+</script>

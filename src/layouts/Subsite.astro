@@ -3,30 +3,36 @@ import ContactButton from "../components/ContactButton.astro";
 import Sidebar from "../components/Sidebar.astro";
 ---
 
-
-<section class="bg-gray-900 pt-36 lg:pt-52 lg:pb-24 ">
-  <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-12">
-    <div class="flex flex-col w-full mb-12 text-center content-center">
-      <h1 class="text-7xl font-thin text-gray-300 max-w-3xl mx-auto racking-normal leading-tight pb-5">
-        {Astro.props.title}
-      </h1>
-      <ContactButton></ContactButton>
+<section class="static">
+    <div class="relative z-0 md:-mt-12 lg:-mt-24 xl:-mt-28 2xl:-mt-44">
+      <div class="w-full">
+        <img src={Astro.props.imgsrc} class="brightness-50  z-0" />
+      </div>
+      <div class="absolute  top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pt-28 md:pt-44 xl:pt-44 2xl:pt-56">
+        <h1 class="text-8xl font-bold text-white mx-auto leading-tight">
+          {Astro.props.title}
+        </h1>
+      </div>
+      <div class="absolute mt-24 top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pt-28 md:pt-44 xl:pt-44 2xl:pt-64">
+        <ContactButton />
+      </div>
     </div>
-  </div>
-  <div class="bg-gray-900 flex flex-row">
-		<article class="container md:pl-24 flex w-full">
-  <div class="container text-gray-300 lg:px-6 w-10/12">
-    <section>
-    <div class=" flex flex-col items-center px-5 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="flex flex-col w-full max-w-3xl mx-auto prose text-left prose-blue">
-            <div class="w-full mx-auto">
-              <slot/>
+    <div class="relative bg-gray-900 flex flex-row sm:-mt-[50px] md:-mt-[100px] lg:-mt-[200px] xl:-mt-[300px] z-10 w-full">
+      <article class="px-6 container flex mx-auto">
+        <div class="container flex flex-col justif text-gray-300 lg:px-6">
+          <section>
+            <div class="flex flex-col items-center mx-auto py-8 2xl:w-10/12">
+              <div class="flex flex-col text-left w-full md:text">
+                <div class="w-full">
+                  <slot />
+                </div>
+              </div>
             </div>
+          </section>
         </div>
-    </div>
-</section>
-  </div>
-</article>
-      <Sidebar></Sidebar>
+      </article>
+      <div class="py-12">
+      <Sidebar />
+      </div>
     </div>
 </section>

@@ -1,11 +1,11 @@
-<div class="text-xl bg-gray-900 box h-full mx-auto mt-8">
-<button
-  type="button"
-  id="form_focus"
-  class=" block px-8 py-3 font-medium text-white bg-gradient-to-r from-blue-900 to-blue-600 rounded-md transition-opacity ease-out duration-300 hover:opacity-70"
->
-  skontaktuj się z nami
-</button>
+<div class="text-x box h-full mx-auto mt-8">
+  <button
+    type="button"
+    id="form_focus"
+    class="block px-10 py-4 font-medium text-white bg-gradient-to-r  from-red-800 to-red-600 rounded-lg transition-opacity ease-out duration-300 hover:opacity-80 shadow-md shadow-black"
+  >
+    skontaktuj się z nami
+  </button>
 </div>
 
 <script>
@@ -14,5 +14,18 @@
       behavior: "smooth",
       block: "center",
     });
+  });
+
+  document.addEventListener("scroll", function (e) {
+    let currentScroll = window.scrollY + window.innerHeight;
+    if (currentScroll > 1000) {
+      document.getElementById("mynav").classList.add("bg-gray-900");
+    }
+  });
+    document.addEventListener("scroll", function (e) {
+    let currentScroll = window.scrollY + window.innerHeight;
+    if (currentScroll < 1000) {
+      document.getElementById("mynav").classList.remove("bg-gray-900");
+    }
   });
 </script>

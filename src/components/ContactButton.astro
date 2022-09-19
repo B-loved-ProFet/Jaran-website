@@ -1,0 +1,18 @@
+<div class="text-xl bg-gray-900 box h-full mx-auto mt-8">
+<button
+  type="button"
+  id="form_focus"
+  class=" block px-8 py-3 font-medium text-white bg-gradient-to-r from-blue-900 to-blue-600 rounded-md transition-opacity ease-out duration-300 hover:opacity-70"
+>
+  skontaktuj się z nami
+</button>
+</div>
+
+<script>
+  document.getElementById("form_focus").addEventListener("click", () => {
+    document.querySelector("#contact-form-name").scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  });
+</script>

@@ -1,12 +1,12 @@
 ---
-import Sidebar from "../components/Sidebar.astro";
 import Layout from "../layouts/Layout.astro";
-import OfferDetective from "../components/subsites/OfferDetective.astro";
-import Subsite from "../components/subsites/Subsite.astro";
+import Subsite from "../layouts/Subsite.astro";
+import Content from '../components/lists/cennikLi.astro';
+
 ---
 
 <Layout title="JARAN Prywatne biuro detektywistyczne Warszawa">
-  <main class="bg-gray-900">
-	<Subsite title="Kontakt"></Subsite>
-  </main>
+  <Subsite title={"Kontakt"}>
+    <Content></Content>
+  </Subsite>
 </Layout>

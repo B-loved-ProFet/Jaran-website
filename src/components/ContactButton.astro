@@ -15,17 +15,4 @@
       block: "center",
     });
   });
-
-  document.addEventListener("scroll", function (e) {
-    let currentScroll = window.scrollY + window.innerHeight;
-    if (currentScroll > 1000) {
-      document.getElementById("mynav").classList.add("bg-gray-900");
-    }
-  });
-    document.addEventListener("scroll", function (e) {
-    let currentScroll = window.scrollY + window.innerHeight;
-    if (currentScroll < 1000) {
-      document.getElementById("mynav").classList.remove("bg-gray-900");
-    }
-  });
 </script>

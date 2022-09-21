@@ -1,4 +1,4 @@
-<nav id="mynav" class="fixed w-full z-50 top-0 bg-gray-900 opacity-95">
+<nav id="mynav" class="fixed w-full z-50 top-0 opacity-90">
   <div
     class="w-full sm:w-5/6 mx-auto flex items-start justify-between mt-0 py-5"
   >
@@ -29,7 +29,7 @@
       </div>
 
       <div
-        class="pr-4 xl:pr-0 hidden w-full items-center flex-grow xl:flex xl:items-center xl:w-auto mt-5 xl:mt-0 bg-inherit z-20"
+        class="pr-4 xl:pr-0 hidden w-full items-center flex-grow xl:flex xl:items-center xl:w-auto mt-5 xl:mt-0 z-20"
         id="nav-content"
       >
         <ul
@@ -57,7 +57,7 @@
           <li class="mr-3 my-3 xl:w-28 place-self-center">
             <a
               class="inline-block text-gray-300 no-underline hover:text-red-600 py-2 px-4 link"
-              href="/ochrona-biznesu">Ochrona biznesu</a
+              href="/ochrona-biznesu">Ochrona Biznesu</a
             >
           </li>
           <li class="mr-3 my-3 xl:w-28 place-self-center">
@@ -73,8 +73,10 @@
             >
           </li>
           <li class="mr-3 my-3 xl:w-28 place-self-center">
-            <a class="inline-block text-gray-300 no-underline hover:text-red-600 py-2 px-4 link"
-            href="#">
+            <a
+              class="inline-block text-gray-300 no-underline hover:text-red-600 py-2 px-4 link"
+              href="#"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -223,7 +225,26 @@
 </nav>
 
 <script>
+  let scrollcheck = 1000;
   document.getElementById("nav-toggle").onclick = function () {
     document.getElementById("nav-content").classList.toggle("hidden");
+    document.getElementById("mynav").classList.toggle("bg-gray-900");
+    if (scrollcheck === 1000) {
+      scrollcheck = 0;
+    } else {
+      scrollcheck = 1000;
+    }
   };
+  document.addEventListener("scroll", function (e) {
+    let currentScroll = window.scrollY + window.innerHeight;
+    if (currentScroll > scrollcheck) {
+      document.getElementById("mynav").classList.add("bg-gray-900");
+    }
+  });
+  document.addEventListener("scroll", function (e) {
+    let currentScroll = window.scrollY + window.innerHeight;
+    if (currentScroll < scrollcheck) {
+      document.getElementById("mynav").classList.remove("bg-gray-900");
+    }
+  });
 </script>

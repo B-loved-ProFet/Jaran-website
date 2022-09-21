@@ -1,4 +1,7 @@
-# Project Structure
+## I have no idea aboud webdev. My gf's mom asked me if i can make website for her, i said of course, so here it is.
+___
+
+## Project Structure
 
 Astro looks for `.astro` or `.md` files in the `src/` directory. Each page is exposed as a route based on its file name.
 

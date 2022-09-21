@@ -1,9 +1,8 @@
 ---
-import ContactButton from "../components/ContactButton.astro";
 import Footer from "../components/Footer.astro";
 import Form from "../components/Form.astro";
 import Nav from "../components/Nav.astro";
-import Sidebar from "../components/Sidebar.astro";
+import Sidebar from "../components/ContactSidebar.astro";
 ---
 
 <!DOCTYPE html>
@@ -52,7 +51,6 @@ import Sidebar from "../components/Sidebar.astro";
         >
           {Astro.props.title}
         </h1>
-        <ContactButton />
       </div>
       <div
         class="z-10 absolute sm:-top-16 md:-top-24 lg:-top-32 xl:-top-40 2xl:-top-48 mx-auto"
@@ -69,7 +67,7 @@ import Sidebar from "../components/Sidebar.astro";
       <div
         class="absolute z-10 w-full mt-[235px] sm:mt-[285px] md:mt-[282px] lg:mt-[376px] xl:mt-[470px] 2xl:mt-[564px] flex flex-col bg-gray-900"
       >
-        <div class="flex flex-row pt-20">
+        <div class="flex flex-row pt-20" >
           <article class="container md:pl-20 flex w-full">
             <div class="container text-gray-300 lg:px-6 w-10/12">
               <section>
@@ -79,13 +77,13 @@ import Sidebar from "../components/Sidebar.astro";
                   <slot />
                 </div>
               </section>
+              <Form />
             </div>
           </article>
-          <div class="pt-12">
+          <div class="pt-12 pb-72">
             <Sidebar />
           </div>
         </div>
-        <Form />
         <Footer />
       </div>
     </section>

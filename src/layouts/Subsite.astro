@@ -15,14 +15,14 @@ import Sidebar from "../components/Sidebar.astro";
     <title>{"JARAN Prywatne biuro detektywistyczne Warszawa"}</title>
   </head>
 
-  <body class="font-[Roboto] static">
+  <body class="font-[Roboto] static bg-gray-900">
     <Nav />
     <section class="bg-gray-900">
       <div
         class="absolute z-20 flex flex-col w-full top-24 sm:top-24 lg:top-28 xl:top-48"
       >
         <h1
-          class="text-5xl sm:text-5xl lg:text-7xl -mb-5 sm:-mb-0 lg:mb-0 font-thin text-gray-300 mx-auto leading-tight"
+          class="text-4xl sm:text-5xl lg:text-7xl -mb-5 sm:mb-0 lg:mb-0 font-thin text-gray-300 mx-auto text-center leading-tight"
         >
           {Astro.props.title}
         </h1>
@@ -30,13 +30,12 @@ import Sidebar from "../components/Sidebar.astro";
       </div>
       <div
         class="z-10 absolute sm:-top-16 md:-top-24 lg:-top-32 xl:-top-40 2xl:-top-48 mx-auto"
-        class=""
       >
       <picture>
         <img
           class={Astro.props.clss}
           src={Astro.props.imgsrc}
-          class="object-fill mx-auto"
+          class="object-fill mx-auto min-h-"
         />
       </picture>
       </div>

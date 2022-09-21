@@ -1,12 +1,12 @@
 ---
-import Sidebar from "../components/Sidebar.astro";
-import Layout from "../layouts/Layout.astro";
-import OfferDetective from "../components/subsites/OfferDetective.astro";
-import Subsite from "../components/subsites/Subsite.astro";
+import Subsite from "../layouts/Subsite.astro";
+import Content from "../components/subpages/windykacja-content.astro";
 ---
 
-<Layout title="JARAN Prywatne biuro detektywistyczne Warszawa">
-  <main class="bg-gray-900">
-	<Subsite title="windykacja"></Subsite>
-  </main>
-</Layout>
+<Subsite
+  title={"Windykacja"}
+  imgsrc={"https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg"}
+  clss={"brightness-50 grayscale"}
+>
+  <Content />
+</Subsite>

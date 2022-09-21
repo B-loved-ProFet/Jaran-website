@@ -1,12 +1,12 @@
 ---
-import Sidebar from "../components/Sidebar.astro";
-import Layout from "../layouts/Layout.astro";
-import OfferDetective from "../components/subsites/OfferDetective.astro";
-import Subsite from "../components/subsites/Subsite.astro";
+import Subsite from "../layouts/Subsite.astro";
+import Content from "../components/subpages/obiz-content.astro";
 ---
 
-<Layout title="JARAN Prywatne biuro detektywistyczne Warszawa">
-  <main class="bg-gray-900">
-	<Subsite title="Ochrona biznesu"></Subsite>
-  </main>
-</Layout>
+<Subsite
+  title={"Ochrona Biznesu"}
+  imgsrc={"https://res.cloudinary.com/dfxcnehol/image/upload/v1600068339/photo_1462899006636_339e08d1844e_ixlib_rb_1_2_4ccb4940c3.jpg"}
+  clss={"brightness-50"}
+>
+  <Content />
+</Subsite>

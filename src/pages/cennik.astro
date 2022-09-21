@@ -1,10 +1,12 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Subsite from "../components/subsites/Subsite.astro";
+import Subsite from "../layouts/Subsite.astro";
+import Content from "../components/subpages/cennik-content.astro";
 ---
 
-<Layout title="JARAN Prywatne biuro detektywistyczne Warszawa">
-  <main class="bg-gray-900">
-	<Subsite title={"Cennik"}></Subsite>
-  </main>
-</Layout>
+<Subsite
+  title={"Cennik"}
+  imgsrc={"https://images.pexels.com/photos/262470/pexels-photo-262470.jpeg"}
+  clss={"brightness-50 "}
+>
+  <Content />
+</Subsite>

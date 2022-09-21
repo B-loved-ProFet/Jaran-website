@@ -1,10 +1,12 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Subsite from "../components/subsites/Subsite.astro";
+import Subsite from "../layouts/Subsite.astro";
+import Content from "../components/subpages/infgos-content.astro";
 ---
 
-<Layout title="JARAN Prywatne biuro detektywistyczne Warszawa">
-  <main class="bg-gray-900">
-	<Subsite title="Informacja Gospodarcza"></Subsite>
-  </main>
-</Layout>
+<Subsite
+  title={"Informacja Gospodarcza"}
+  imgsrc={"https://res.cloudinary.com/dfxcnehol/image/upload/v1600068047/photo_1517430816045_df4b7de11d1d_ixlib_rb_1_2_a8b0349353.jpg"}
+  clss={"brightness-50"}
+>
+  <Content />
+</Subsite>

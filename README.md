@@ -1,31 +1,13 @@
-# Project Structure
- 
-Directory and file structure:
+## I have no idea aboud webdev. My gf's mom asked me if i can make website for her, i said of course, so here it is.
+___
 
-```
-├── public/
-│   └── logo-stre.png
-├── src/
-│   ├── components/
-│   │   ├── CardMain.astro
-|   |   ├── Contact.astro
-|   |   ├── ContactToast.astro
-|   |   ├── Footer.astro
-|   |   └── Nav.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Project Structure
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Astro looks for `.astro` or `.md` files in the `src/` directory. Each page is exposed as a route based on its file name.
 
 Any static assets, like images, can be placed in the `public/` directory.
 
-## 🧞 Commands
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 

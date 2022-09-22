@@ -3,12 +3,12 @@ import Footer from "../components/Footer.astro";
 import Form from "../components/Form.astro";
 import Nav from "../components/Nav.astro";
 import Sidebar from "../components/ContactSidebar.astro";
+import Map from "../components/Map.astro";
 ---
 
 <!DOCTYPE html>
 <html lang="pl">
   <head>
-
     <meta
       name="google-site-verification"
       content="cy2LBn3YlupNGqpHEm_bKVFq70NARt2VTHNYb_kHo_w"
@@ -67,7 +67,7 @@ import Sidebar from "../components/ContactSidebar.astro";
       <div
         class="absolute z-10 w-full mt-[235px] sm:mt-[285px] md:mt-[282px] lg:mt-[376px] xl:mt-[470px] 2xl:mt-[564px] flex flex-col bg-gray-900"
       >
-        <div class="flex flex-row pt-20" >
+        <div class="flex flex-row pt-20">
           <article class="container md:pl-20 flex w-full">
             <div class="container text-gray-300 lg:px-6 w-10/12">
               <section>
@@ -84,7 +84,12 @@ import Sidebar from "../components/ContactSidebar.astro";
             <Sidebar />
           </div>
         </div>
-        <Footer />
+        <div>
+          <div>
+            <Map></Map>
+          </div>
+          <Footer />
+        </div>
       </div>
     </section>
   </body>

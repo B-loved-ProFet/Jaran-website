@@ -11,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/image": "^0.7.1",
     "@astrojs/tailwind": "^1.0.1",
     "@astrojs/vercel": "^2.0.0",
     "astro": "^1.2.3",

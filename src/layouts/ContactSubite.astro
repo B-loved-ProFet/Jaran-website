@@ -4,6 +4,7 @@ import Form from "../components/Form.astro";
 import Nav from "../components/Nav.astro";
 import Sidebar from "../components/ContactSidebar.astro";
 import Map from "../components/Map.astro";
+import { Image} from "@astrojs/image/components";
 ---
 
 <!DOCTYPE html>
@@ -55,11 +56,12 @@ import Map from "../components/Map.astro";
       <div
         class="z-10 absolute sm:-top-16 md:-top-24 lg:-top-32 xl:-top-40 2xl:-top-48 mx-auto"
       >
-        <picture>
-          <img
-            class={Astro.props.clss}
+        <picture class={Astro.props.clss} class="object-fill mx-auto">
+          <Image
             src={Astro.props.imgsrc}
-            class="object-fill mx-auto"
+            alt=""
+            height={"1000"}
+            width={"1920"}
           />
         </picture>
       </div>

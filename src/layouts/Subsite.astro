@@ -4,6 +4,7 @@ import Footer from "../components/Footer.astro";
 import Form from "../components/Form.astro";
 import Nav from "../components/Nav.astro";
 import Sidebar from "../components/Sidebar.astro";
+import { Image} from "@astrojs/image/components";
 ---
 
 <!DOCTYPE html>
@@ -57,11 +58,13 @@ import Sidebar from "../components/Sidebar.astro";
       <div
         class="z-10 absolute sm:-top-16 md:-top-24 lg:-top-32 xl:-top-40 2xl:-top-48 mx-auto"
       >
-        <picture>
-          <img
-            class={Astro.props.clss}
+        <picture class={Astro.props.clss} class="object-fill mx-auto">
+          <Image
             src={Astro.props.imgsrc}
             class="object-fill mx-auto"
+            width={"1920"}
+            height={"1000"}
+            alt=""
           />
         </picture>
       </div>

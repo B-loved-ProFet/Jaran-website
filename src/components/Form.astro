@@ -1,22 +1,22 @@
 <div
-  class="flex flex-col flex-wrap-reverse content-center w-full py-12 relative bg-gray-900"
+  class="flex flex-col flex-wrap-reverse content-center w-10/12 rounded-2xl bg-sky-100 h-full border-2 border-sky-700"
 >
-  <form class="flex w-full">
+  <form class=" w-full h-full">
     <div
-      class="w-full max-w-2xl px-5 py-10 m-auto mt-10 bg-white rounded-lg shadow dark:bg-gray-800"
+      class="w-full h-full top-0 m-auto bg-sky-100 rounded-lg shadow dark:bg-gray-800"
     >
       <div
-        class="mb-6 text-3xl font-light text-center text-gray-800 dark:text-white"
+        class="mb-6 text-5xl pt-5 font-thin text-center top-0 text-red-700"
       >
         Skontaktuj się z nami
       </div>
-      <div class="grid max-w-xl grid-cols-2 gap-4 m-auto">
+      <div class="grid max-w-4xl grid-cols-2 gap-5 grid-flow-row h-4/5 gap-y-2">
         <div class="col-span-2 lg:col-span-1">
-          <div class="relative">
+          <div class="relative h-6">
             <input
               type="text"
               id="contact-form-name"
-              class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+              class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent"
               placeholder="Imie"
             />
           </div>
@@ -26,15 +26,15 @@
             <input
               type="text"
               id="contact-form-email"
-              class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+              class="rounded-lg border-transparent  appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent"
               placeholder="email"
             />
           </div>
         </div>
-        <div class="col-span-2">
-          <label class="text-gray-700" for="name">
+        <div class="col-span-2 h-full">
+          <label class="text-gray-700" for="message">
             <textarea
-              class="flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+              class="flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent"
               id="comment"
               placeholder="Enter your comment"
               name="comment"
@@ -44,10 +44,10 @@
             </textarea>
           </label>
         </div>
-        <div class="col-span-2 text-right">
+        <div class="col-span-2 text-right pb-4">
           <button
             type="submit"
-            class="py-2 px-4 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+            class="py-2 px-4 bg-gradient-to-r from-red-800 to-red-600 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
           >
             Wyślij
           </button>

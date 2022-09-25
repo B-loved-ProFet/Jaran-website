@@ -1,15 +1,19 @@
+---
+import {Image} from "@astrojs/image/components";
+---
+
 <footer class="">
   <div
     class="w-full bg-gradient-to-t from-stone-900 via-gray-900 to-gray-900 pt-14"
   >
-    <div class="container m-auto px-6 py-6 space-y-8 text-gray-300 lg:px-12">
+    <div class="container m-auto px-6 py-img6 space-y-8 text-gray-300 lg:px-12">
       <div class="grid grid-cols-7 gap-6 lg:gap-0">
         <div class="col-span-8 lg:col-span-2">
           <div
             class="hidden gap-6 items-center justify-between py-6 lg:py-0 lg:border-none lg:block lg:space-y-6"
           >
-            <img src="logo-stare.png" alt="logo jaran" />
-            <p class="text-lg md:text-2xl lg:text-xl">
+            <Image src="logo-stare.png" alt="logo jaran" width={[250]} height={[60]} format={'webp'}/>
+            <p class="text-lg md:text-xl">
               Profesjonalna firma świadcząca usługi detektywistyczne i
               windykacyjne. Posiadamy doświadczenie, umiejętności i determinację
               w rozwiązywaniu Twoich trudnych spraw. Sprawdź nas!
@@ -19,8 +23,8 @@
         <div class="col-span-8 lg:col-span-5">
           <div class="lg:pl-16 pb-16 grid grid-cols-2 gap-6 sm:grid-cols-3">
             <div>
-              <h6 class="text-lg md:text-2xl lg:text-xl font-extrabold">Przydatne linki</h6>
-              <ul class="list-inside mt-4 space-y-4 text-lg md:text-2xl lg:text-xl">
+              <h6 class="text-lg md:text-xl font-extrabold">Przydatne linki</h6>
+              <ul class="list-inside mt-4 space-y-4 text-lg md:text-xl">
                 <li>
                   <a href="#" class="hover:text-red-600">Detektyw</a>
                 </li>
@@ -44,23 +48,23 @@
               </ul>
             </div>
             <div>
-              <h6 class="text-lg md:text-2xl lg:text-xl font-extrabold">Dane firmy</h6>
-              <p class="list-inside mt-4 space-y-4 text-lg md:text-2xl lg:text-xl">
+              <h6 class="text-lg md:text-xl font-extrabold">Dane firmy</h6>
+              <p class="list-inside mt-4 space-y-4 text-lg md:text-xl">
                 Zezwolenie MSWiA RD-45/2008
               </p>
-              <p class="list-inside mt-4 space-y-4 text-lg md:text-2xl lg:text-xl">
+              <p class="list-inside mt-4 space-y-4 text-lg md:text-xl">
                 Polisa Ubezpieczeniowa OC Zawodowej
               </p>
-              <p class="list-inside mt-4 space-y-4 text-lg md:text-2xl lg:text-xl">Licencja nr 0003798</p>
-              <p class="list-inside mt-4 space-y-4 text-lg md:text-2xl lg:text-xl">NIP: 526-139-57-09</p>
+              <p class="list-inside mt-4 space-y-4 text-lg md:text-xl">Licencja nr 0003798</p>
+              <p class="list-inside mt-4 space-y-4 text-lg md:text-xl">NIP: 526-139-57-09</p>
             </div>
             <div>
-              <h6 class="text-lg md:text-2xl lg:text-xl font-extrabold">Kontakt</h6>
-              <p class="list-inside mt-4 space-y-4 text-lg md:text-2xl lg:text-xl">ul. Poznańska 24 lok. 21</p>
-              <p class="list-inside mt-4 space-y-4 text-lg md:text-2xl lg:text-xl">00-685 Warszawa</p>
-              <p class="list-inside mt-4 space-y-4 text-lg md:text-2xl lg:text-xl">tel: +48 22 622 14 08</p>
-              <p class="list-inside mt-4 space-y-4 text-lg md:text-2xl lg:text-xl">tel: +48 669 981 964</p>
-              <p class="list-inside mt-4 space-y-4 text-lg md:text-2xl lg:text-xl">
+              <h6 class="text-lg md:text-xl font-extrabold">Kontakt</h6>
+              <p class="list-inside mt-4 space-y-4 text-lg md:text-xl">ul. Poznańska 24 lok. 21</p>
+              <p class="list-inside mt-4 space-y-4 text-lg md:text-xl">00-685 Warszawa</p>
+              <p class="list-inside mt-4 space-y-4 text-lg md:text-xl">tel: +48 22 622 14 08</p>
+              <p class="list-inside mt-4 space-y-4 text-lg md:text-xl">tel: +48 669 981 964</p>
+              <p class="list-inside mt-4 space-y-4 text-lg md:text-xl">
                 email: biuro@jaran.com.pl
               </p>
             </div>

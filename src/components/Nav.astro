@@ -7,13 +7,15 @@ import { Image } from '@astrojs/image/components';
   >
     <div class="ml-0 py-auto flex flex-row">
       <a href="/">
-        <img
+        <Image
+          width={[250]} height={[60]}
+          format={'webp'}
           src="logo-stare.png"
           alt="logo"
           class="object-fill t-0 my-auto w-8/12 sm:w-10/12 pl-10 xl:pl-0 pt-5 sm:pt-9"
         />
       </a>
-      <a href="/" class="py-3 absolute pt-3 ml-48 sm:ml-60 lg:ml-60 xl:ml-52 sm:pt-8"><Image format='webp' alt="logo" src="/pajak.png" width={[60]} height={[60]} /></a>
+      <a href="/" class="py-3 absolute pt-3 ml-48 sm:ml-60 lg:ml-60 xl:ml-52 sm:pt-8"><Image format={'webp'} alt="logo" src="/pajak.png" width={[60]} height={[60]} /></a>
     </div>
 
     <div class="flex flex-col items-end pt-5">
@@ -37,7 +39,7 @@ import { Image } from '@astrojs/image/components';
         id="nav-content"
       >
         <ul
-          class="xl:flex text-lg md:text-2xl lg:text-xl font-medium justify-end flex-1 xl:text-center text-end"
+          class="xl:flex text-lg md:text-xl font-medium justify-end flex-1 xl:text-center text-end"
         >
           <li class="mr-3 my-3 xl:w-28 place-self-center">
             <a

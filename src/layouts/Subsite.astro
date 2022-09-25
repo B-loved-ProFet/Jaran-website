@@ -15,7 +15,7 @@ import { Image } from "@astrojs/image/components";
       content="cy2LBn3YlupNGqpHEm_bKVFq70NARt2VTHNYb_kHo_w"
     />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <meta
       name="description"
@@ -69,19 +69,19 @@ import { Image } from "@astrojs/image/components";
       </div>
 
       <div
-        class="absolute z-10 w-full mt-[235px] sm:mt-[285px] md:mt-[282px] lg:mt-[376px] xl:mt-[470px] 2xl:mt-[564px] flex flex-col bg-gray-900"
+        class="absolute z-10 w-full mt-[200px] sm:mt-[285px] md:mt-[282px] lg:mt-[376px] xl:mt-[470px] 2xl:mt-[564px] flex flex-col bg-gray-900"
       >
-        <div class="flex flex-row pt-20">
-          <article class="container md:pl-20 flex w-full">
-            <div class="container text-gray-300 lg:px-6 w-10/12">
+        <div class="px-5 flex flex-row ">
+          <article class=" lg:pl-20 flex w-full">
+            <div class="text-gray-300 lg:px-6 lg:w-10/12 text-center">
               <section>
                 <div
-                  class="flex flex-col items-center w-full px-10 py-8 text-left"
+                  class="flex flex-col items-center w-full md:px-10 py-8 text-left"
                 >
                   <slot />
                 </div>
               </section>
-              <div class="w-10/12 mx-auto pt-24">
+              <div class=" w-full mx-auto pt-24">
                 <Form />
               </div>
             </div>

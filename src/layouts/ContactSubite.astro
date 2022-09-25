@@ -15,7 +15,7 @@ import { Image } from "@astrojs/image/components";
       content="cy2LBn3YlupNGqpHEm_bKVFq70NARt2VTHNYb_kHo_w"
     />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <meta
       name="description"
@@ -45,7 +45,7 @@ import { Image } from "@astrojs/image/components";
     <Nav />
     <section class="bg-gray-900">
       <div
-        class="absolute z-20 flex flex-col w-full top-24 sm:top-24 lg:top-28 xl:top-48"
+        class="absolute z-20 flex flex-col w-full pt-3 sm:pt-12 md:pt-12 top-24 sm:top-24 lg:top-28 xl:top-48"
       >
         <h1
           class="text-4xl sm:text-5xl lg:text-7xl -mb-5 sm:mb-0 lg:mb-0 font-thin text-gray-300 mx-auto text-center leading-tight"
@@ -69,19 +69,19 @@ import { Image } from "@astrojs/image/components";
       </div>
 
       <div
-        class="absolute z-10 w-full mt-[235px] sm:mt-[285px] md:mt-[282px] lg:mt-[376px] xl:mt-[470px] 2xl:mt-[564px] flex flex-col bg-gray-900"
+        class="absolute z-10 w-full mt-[200px] sm:mt-[285px] md:mt-[282px] lg:mt-[376px] xl:mt-[470px] 2xl:mt-[564px] flex flex-col bg-gray-900"
       >
-        <div class="flex flex-row pt-20">
-          <article class="md:pl-20 flex w-full">
-            <div class="flex flex-col items-center text-gray-300 lg:px-6">
+        <div class="flex flex-row">
+          <article class="lg:pl-20 md:px-10 flex w-full">
+            <div class="text-gray-300 lg:px-6 lg:w-10/12 text-center">
               <section>
                 <div
-                  class="flex flex-col items-center px-10 pb-32 pt-8 text-left w-10/12"
+                  class="flex flex-col items-center px-10 xl:pb-16 pt-8 text-left w-10/12"
                 >
                   <slot />
                 </div>
               </section>
-              <div class="w-8/12">
+              <div class=" w-full mx-auto pt-24">
                 <Form />
               </div>
             </div>

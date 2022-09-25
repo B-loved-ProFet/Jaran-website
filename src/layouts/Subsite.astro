@@ -4,13 +4,12 @@ import Footer from "../components/Footer.astro";
 import Form from "../components/Form.astro";
 import Nav from "../components/Nav.astro";
 import Sidebar from "../components/Sidebar.astro";
-import { Image} from "@astrojs/image/components";
+import { Image } from "@astrojs/image/components";
 ---
 
 <!DOCTYPE html>
 <html lang="pl">
   <head>
-
     <meta
       name="google-site-verification"
       content="cy2LBn3YlupNGqpHEm_bKVFq70NARt2VTHNYb_kHo_w"
@@ -82,13 +81,15 @@ import { Image} from "@astrojs/image/components";
                   <slot />
                 </div>
               </section>
+              <div class="w-10/12 mx-auto pt-24">
+                <Form />
+              </div>
             </div>
           </article>
-          <div class="pt-12">
+          <div class="pt-24">
             <Sidebar />
           </div>
         </div>
-        <Form />
         <Footer />
       </div>
     </section>

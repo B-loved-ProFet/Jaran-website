@@ -1,3 +1,6 @@
+---
+import { Image } from '@astrojs/image/components';
+---
 <nav id="mynav" class="fixed w-full z-50 top-0 opacity-90">
   <div
     class="w-full sm:w-5/6 mx-auto flex items-start justify-between mt-0 py-5"
@@ -10,7 +13,7 @@
           class="object-fill t-0 my-auto w-8/12 sm:w-10/12 pl-10 xl:pl-0 pt-9"
         />
       </a>
-      <a href="/" class="py-3 absolute ml-44"><img src="/pajak.png" /></a>
+      <a href="/" class="py-3 absolute pt-8 ml-48 sm:ml-60 lg:ml-60 xl:ml-52 sm:pt-8"><Image format={'webp'} alt="logo" src="/pajak.png" width={[60]} height={[60]} ></a>
     </div>
 
     <div class="flex flex-col items-end pt-5">

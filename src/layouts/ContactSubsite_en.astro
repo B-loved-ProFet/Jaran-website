@@ -1,0 +1,102 @@
+---
+import Footer from "../components/Footer.astro";
+import Form from "../components/Form.astro";
+import Nav from "../components/Nav_en.astro";
+import Sidebar from "../components/ContactSidebar.astro";
+import Map from "../components/Map.astro";
+import { Image } from "@astrojs/image/components";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="google-site-verification"
+      content="cy2LBn3YlupNGqpHEm_bKVFq70NARt2VTHNYb_kHo_w"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="JARAN is a Polish private investigator agency based in Warsaw providing expert investigation services to private and corporate clients."
+    />
+
+    <meta property="og:title" content="JARAN Detective office" />
+    <meta
+      property="og:description"
+      content="JARAN is a Polish private investigator agency based in Warsaw providing expert investigation services to private and corporate clients."
+    />
+    <meta property="og:image" content="TO DO" />
+    <meta property="og:url" content="TO DO" />
+
+    <meta name="twitter:title" content="JARAN Detective office" />
+    <meta
+      name="twitter:description"
+      content="JARAN is a Polish private investigator agency based in Warsaw providing expert investigation services to private and corporate clients."
+    />
+    <meta name="twitter:url" content="TODO" />
+    <meta name="twitter:card" content="Detective office" />
+
+    <title>{"JARAN private detective office Warsaw"}</title>
+  </head>
+
+  <body class="font-[Roboto] static bg-gray-900 h-full">
+    <Nav />
+    <section class="bg-gray-900">
+      <div
+        class="absolute z-20 flex flex-col w-full pt-3 sm:pt-12 md:pt-12 top-24 sm:top-24 lg:top-28 xl:top-48"
+      >
+        <h1
+          class="text-4xl sm:text-5xl lg:text-7xl -mb-5 sm:mb-0 lg:mb-0 font-thin text-gray-300 mx-auto text-center leading-tight"
+        >
+          {Astro.props.title}
+        </h1>
+      </div>
+      <div
+        class="z-10 absolute sm:-top-16 md:-top-24 lg:-top-32 xl:-top-40 2xl:-top-48 mx-auto"
+      >
+        <picture class={Astro.props.clss} class="object-fill mx-auto">
+          <Image
+            class="brightness-150"
+            src={Astro.props.imgsrc}
+            format={"webp"}
+            alt="Zdjęcie starego telefonu"
+            height={"1000"}
+            width={"1920"}
+          />
+        </picture>
+      </div>
+
+      <div
+        class="absolute z-10 w-full mt-[200px] sm:mt-[285px] md:mt-[282px] lg:mt-[376px] xl:mt-[470px] 2xl:mt-[564px] flex flex-col bg-gray-900"
+      >
+        <div class="flex flex-row">
+          <div class="lg:pl-20 md:px-10 flex w-full">
+            <div class="text-gray-300 lg:px-6 lg:w-10/12 text-center">
+              <section>
+                <div
+                  class="flex flex-col items-center px-10 xl:pb-16 pt-8 text-left w-10/12"
+                >
+                  <slot />
+                </div>
+              </section>
+              <div class=" w-full mx-auto pt-24">
+                <Form />
+              </div>
+            </div>
+          </div>
+          <div class="pt-12 pb-72">
+            <Sidebar />
+          </div>
+        </div>
+        <div class="flex flex-col mx-auto">
+          <div class="flex py-20">
+            <Map />
+          </div>
+          <Footer />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

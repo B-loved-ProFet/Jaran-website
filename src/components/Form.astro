@@ -1,47 +1,61 @@
 <div class="content-center rounded-2xl bg-sky-100 border-2 border-sky-700 py-5">
-  <form class="flex flex-col w-full">
-    <div class="w-full mx-auto pb-3 text-center">
-      <label for="contact_mail" class=" text-red-600 text-5xl">Skontaktuj się z nami</label>
-    </div>
-    <div class="flex flex-col sm:flex-row w-full justify-between px-5 gap-5">
-      <div class="flex-auto">
+  <h3 class="text-red-600 text-5xl text-center pb-3">Skontaktuj się z nami</h3>
+  <form
+    id="fs-frm"
+    name="simple-contact-form"
+    accept-charset="utf-8"
+    action="https://formspree.io/f/mrgdqlan"
+    method="post"
+    class="flex flex-col w-full"
+  >
+    <fieldset id="fs-frm-inputs">
+      <div class="flex flex-col sm:flex-row w-full justify-between px-5 gap-5">
+        <div class="flex-auto">
+          <label for="full-name" class="hidden">Imie</label>
+          <input
+            type="text"
+            name="name"
+            id="full-name"
+            placeholder="Imie"
+            required=""
+            class="rounded-lg border-transparent appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent"
+          />
+        </div>
+        <div class="flex-auto">
+          <label for="email-address" class="hidden">Adres mailowy</label>
+          <input
+            type="email"
+            name="_replyto"
+            id="email-address"
+            placeholder="email@domena.pl"
+            required=""
+            class="rounded-lg border-transparent appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent"
+          />
+        </div>
+      </div>
+      <div class="pt-5 px-5">
+        <label for="message " class="hidden">Wiadomość</label>
+        <textarea
+          rows="10"
+          name="message"
+          id="message"
+          placeholder="Wiadomość"
+          required=""
+          class="appearance-none border w-full px-5 py-2 border-gray-300 bg-white text-gray-700 placeholder-gray-400 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent"
+        ></textarea>
         <input
-          type="text"
-          placeholder="Imie"
-          name="imie"
-          id="contact_mail"
-          required
-          class="rounded-lg border-transparent appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent"
+          type="hidden"
+          name="_subject"
+          id="email-subject"
+          value="Contact Form Submission"
         />
       </div>
-      <div class="flex-auto">
-        <input
-          type="text"
-          placeholder="email"
-          name="email"
-          id="contact_mail"
-          required
-          class="rounded-lg border-transparent appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent"
-        />
-      </div>
-    </div>
+    </fieldset>
     <div class="pt-5 px-5">
-      <textarea
-        id="contact_mail"
-        placeholder="Twoja wiadomość"
-        name="message"
-        rows="12"
-        required
-        class="appearance-none border w-full px-5 py-2 border-gray-300 bg-white text-gray-700 placeholder-gray-400 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent"
-      >
-      </textarea>
-    </div>
-    <div class="py-3 px-5">
-      <button
-        type="button"
-        class="py-2 px-4 bg-gradient-to-r from-red-800 to-red-600 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
-        >Wyślij</button
-      >
-    </div>
+    <input
+      type="submit"
+      value="Wyślij"
+      class="py-2 px-4 bg-gradient-to-r from-red-800 to-red-600 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+    /></div>
   </form>
 </div>

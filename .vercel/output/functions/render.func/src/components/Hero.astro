@@ -1,0 +1,41 @@
+---
+import ContactButton from "./ContactButton.astro";
+
+---
+
+<header class="px-4 pt-44 xl:pt-52 text-xl bg-gray-900 box h-full">
+  <div class="items-center">
+    <div class="w-full text-center">
+      <h1
+        class="text-5xl font-medium text-gray-200 pb-8 md:max-w-3xl mx-auto max-w-xl tracking-normal leading-tight"
+      >
+        Prywatny detektyw,<br />Biuro detektywistyczne <span class="uppercase"
+          >jaran</span
+        >
+      </h1>
+
+      <p
+        class="max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto mt-4 text-lg text-gray-200 font-light tracking-wide"
+      >
+        Świadczymy usługi detektywistyczne i windykacyjne dla osób prywatnych
+        oraz podmiotów gospodarczych. Poufność, profesjonalizm, ponad 15-letnie
+        doświadczenie oraz indywidualne podejście do klienta to nasze atuty.
+        Oferujemy pomoc w każdej sprawie. Sprawa Klienta staje się naszą wspólną
+        sprawą.
+      </p>
+
+      <div class="flex flex-wrap justify-center mt-8 gap-4">
+        <ContactButton></ContactButton>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.getElementById("form_focus").addEventListener("click", () => {
+    document.querySelector("#contact-form-name").scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  });
+</script>

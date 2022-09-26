@@ -1,0 +1,1 @@
+import"./chunks/Nav.astro_astro_type_script_index_0_lang.acd1320e.js";document.getElementById("form_focus").addEventListener("click",()=>{document.querySelector("#contact-form-name").scrollIntoView({behavior:"smooth",block:"center"})});

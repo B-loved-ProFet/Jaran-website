@@ -1,0 +1,40 @@
+---
+import ContactButton from "./ContactButton_en.astro";
+import { Image } from "@astrojs/image/components";
+---
+
+<header class=" pt-32 sm:pt-44 xl:pt-52 text-xl box w-full h-screen">
+  |<Image
+    src={"/backgrounds/warsaw-4419052.jpg"}
+    alt=""
+    height={"1080"}
+    width={"1920"}
+    format={"webp"}
+    class="absolute flex -z-10 brightness-50 top-0 mx-auto object-cover min-h-screen"
+  />
+  <div class="items-center">
+    <div class="w-full text-center">
+      <h1
+        class="text-3xl sm:text-7xl font-medium text-white z-50 pb-8 max-w-xs sm:max-w-3xl mx-auto racking-normal leading-tight"
+      >
+        Detectives<br />Private Investigator <span class="uppercase"
+          >jaran</span
+        >
+      </h1>
+
+      <p
+        class="text-base sm:text-2xl max-w-xs sm:max-w-2xl md:max-w-3xl mx-auto mt-4 text-white font-light tracking-wide"
+      >
+        Świadczymy usługi detektywistyczne i windykacyjne dla osób prywatnych
+        oraz podmiotów gospodarczych. Poufność, profesjonalizm, ponad 16-letnie
+        doświadczenie oraz indywidualne podejście do klienta to nasze atuty.
+        Oferujemy pomoc w każdej sprawie. Sprawa Klienta staje się naszą wspólną
+        sprawą.
+      </p>
+
+      <div class="flex flex-wrap justify-center mt-8 gap-4">
+        <ContactButton />
+      </div>
+    </div>
+  </div>
+</header>

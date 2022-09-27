@@ -1,0 +1,51 @@
+---
+import Features from "../components/Features.astro";
+import Footer from "../components/Footer_en.astro";
+import Form from "../components/Form_en.astro";
+import NavEn from "../components/Nav_en.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta
+      name="google-site-verification"
+      content="cy2LBn3YlupNGqpHEm_bKVFq70NARt2VTHNYb_kHo_w"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="JARAN is a Polish private investigator agency based in Warsaw providing expert investigation services to private and corporate clients."
+    />
+
+    <meta property="og:title" content="JARAN Detective office" />
+    <meta
+      property="og:description"
+      content="JARAN is a Polish private investigator agency based in Warsaw providing expert investigation services to private and corporate clients."
+    />
+    <meta property="og:image" content="TO DO" />
+    <meta property="og:url" content="TO DO" />
+
+    <meta name="twitter:title" content="JARAN Detective office" />
+    <meta
+      name="twitter:description"
+      content="JARAN is a Polish private investigator agency based in Warsaw providing expert investigation services to private and corporate clients."
+    />
+    <meta name="twitter:url" content="TODO" />
+    <meta name="twitter:card" content="biuro detektywistyczne" />
+
+    <title>{"JARAN private detective office Warsaw"}</title>
+  </head>
+  <body class="font-[Roboto] overflow-x-hidden">
+    <NavEn />
+    <slot />
+    <div class="bg-gray-900">
+      <div class="w-11/12 md:w-11/12 lg:w-4/6 xl:w-1/2 mx-auto pt-24">
+        <Form />
+      </div>
+      <Footer />
+    </div>
+  </body>
+</html>

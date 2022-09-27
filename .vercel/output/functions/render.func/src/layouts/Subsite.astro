@@ -1,0 +1,97 @@
+---
+import ContactButton from "../components/ContactButton.astro";
+import Footer from "../components/Footer.astro";
+import Form from "../components/Form.astro";
+import Nav from "../components/Nav.astro";
+import Sidebar from "../components/Sidebar.astro";
+import { Image } from "@astrojs/image/components";
+---
+
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta
+      name="google-site-verification"
+      content="cy2LBn3YlupNGqpHEm_bKVFq70NARt2VTHNYb_kHo_w"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Biuro detektywistyczne z ponad 16 letnim doświadczeniem. Dyskretne obserwacje, Sprawy Rodzinne i Firmowe. Dyskrecja i skuteczność"
+    />
+
+    <meta property="og:title" content="JARAN Biuro detektywistyczne" />
+    <meta
+      property="og:description"
+      content="Biuro detektywistyczne z ponad 16 letnim doświadczeniem. Dyskretne obserwacje, Sprawy Rodzinne i Firmowe. Dyskrecja i skuteczność"
+    />
+    <meta property="og:image" content="TO DO" />
+    <meta property="og:url" content="TO DO" />
+
+    <meta name="twitter:title" content="JARAN Biuro detektywistyczne" />
+    <meta
+      name="twitter:description"
+      content="Biuro detektywistyczne z ponad 16 letnim doświadczeniem. Dyskretne obserwacje, Sprawy Rodzinne i Firmowe. Dyskrecja i skuteczność"
+    />
+    <meta name="twitter:url" content="TODO" />
+    <meta name="twitter:card" content="biuro detektywistyczne" />
+
+    <title>{"JARAN Prywatne biuro detektywistyczne Warszawa"}</title>
+  </head>
+
+  <body class="font-[Roboto] static bg-gray-900">
+    <Nav />
+    <section class="bg-gray-900">
+      <div
+        class="absolute z-20 flex flex-col w-full top-24 sm:top-24 lg:top-28 xl:top-48"
+      >
+        <h1
+          class="text-4xl sm:text-5xl lg:text-7xl -mb-5 sm:mb-0 lg:mb-0 font-thin text-gray-300 mx-auto text-center leading-tight"
+        >
+          {Astro.props.title}
+        </h1>
+        <ContactButton />
+      </div>
+      <div
+        class="z-10 absolute sm:-top-16 md:-top-24 lg:-top-32 xl:-top-40 2xl:-top-48 mx-auto"
+      >
+        <picture class={Astro.props.clss} class="object-fill mx-auto">
+          <Image
+            src={Astro.props.imgsrc}
+            format={"webp"}
+            width={"1920"}
+            height={"1000"}
+            alt={Astro.props.altprop}
+          />
+        </picture>
+      </div>
+
+      <div
+        class="absolute z-10 w-full mt-[200px] sm:mt-[285px] md:mt-[282px] lg:mt-[376px] xl:mt-[470px] 2xl:mt-[564px] flex flex-col bg-gray-900"
+      >
+        <div class="px-5 flex flex-row">
+          <div class="lg:pl-20 flex w-full">
+            <div class="text-gray-300 lg:px-6 lg:w-10/12 text-center">
+              <section>
+                <div
+                  class="flex flex-col items-center w-full md:px-10 py-8 text-left"
+                >
+                  <slot />
+                </div>
+              </section>
+              <div class="w-full mx-auto pt-24">
+                <Form />
+              </div>
+            </div>
+          </div>
+          <div class="pt-24">
+            <Sidebar />
+          </div>
+        </div>
+        <Footer />
+      </div>
+    </section>
+  </body>
+</html>

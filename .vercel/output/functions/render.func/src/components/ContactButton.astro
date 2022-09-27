@@ -1,0 +1,18 @@
+<div class="text-x box h-full mx-auto mt-8">
+  <button
+    type="button"
+    id="form_focus"
+    class="block px-5 py-2 sm:px-10 sm:py-4 font-medium text-white bg-gradient-to-r from-red-800 to-red-600 rounded-lg transition-opacity ease-out duration-300 hover:opacity-80 shadow-md shadow-black"
+  >
+    skontaktuj się z nami
+  </button>
+</div>
+
+<script defer>
+  document.getElementById("form_focus").addEventListener("click", () => {
+    document.querySelector("#email-address").scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  });
+</script>

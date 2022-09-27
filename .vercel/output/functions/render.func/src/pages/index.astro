@@ -1,0 +1,18 @@
+---
+import CardMain from "../components/CardMain.astro";
+import Hero from "../components/Hero.astro";
+import Sidebar from "../components/Sidebar.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="JARAN Prywatne biuro detektywistyczne Warszawa">
+  <main>
+    <Hero />
+    <div class="bg-gray-900 flex flex-row pt-5 md:pt-12 xl:pt-16">
+      <div class="flex flex-col bg-gray-900">
+        <CardMain />
+      </div>
+      <Sidebar />
+    </div>
+  </main>
+</Layout>

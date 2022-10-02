@@ -1,6 +1,7 @@
 ---
-import { Image } from '@astrojs/image/components';
+import { Image } from "@astrojs/image/components";
 ---
+
 <nav id="mynav" class="fixed w-full z-50 top-0 opacity-90">
   <div
     class="w-full sm:w-5/6 mx-auto flex items-start justify-between mt-0 py-5"
@@ -8,14 +9,25 @@ import { Image } from '@astrojs/image/components';
     <div class="ml-0 py-auto flex flex-row">
       <a href="/">
         <Image
-          width={[250]} height={[60]}
-          format={'webp'}
+          width={[250]}
+          height={[60]}
+          format={"webp"}
           src="logo-stare.png"
           alt="logo"
           class="object-fill t-0 my-auto w-8/12 sm:w-10/12 pl-10 xl:pl-0 pt-5 sm:pt-9"
         />
       </a>
-      <a href="/" class="py-3 absolute pt-3 ml-48 sm:ml-60 lg:ml-60 xl:ml-52 sm:pt-8"><Image format={'webp'} alt="logo" src="/pajak.png" width={[70]} height={[70]} /></a>
+      <a
+        href="/"
+        class="py-3 absolute pt-3 ml-48 sm:ml-60 lg:ml-60 xl:ml-52 sm:pt-8"
+        ><Image
+          format={"webp"}
+          alt="logo"
+          src="/pajak.png"
+          width={[50]}
+          height={[50]}
+        />
+      </a>
     </div>
 
     <div class="flex flex-col items-end pt-5">
@@ -35,7 +47,7 @@ import { Image } from '@astrojs/image/components';
       </div>
 
       <div
-        class="pr-4 xl:pr-0 hidden w-full items-center flex-grow xl:flex xl:items-center xl:w-auto xl:mt-0 z-20"
+        class="pr-4 xl:pr-0 hidden w-full items-center justify-between flex-grow xl:flex xl:items-center xl:w-auto xl:mt-0 z-20"
         id="nav-content"
       >
         <ul
@@ -54,9 +66,9 @@ import { Image } from '@astrojs/image/components';
               href="/windykacja">Windykacja</a
             >
           </li>
-          <li class="mr-3 my-3 xl:w-28 place-self-center">
+          <li class="mx-3 my-3 xl:w-28 place-self-center">
             <a
-              class="inline-block text-gray-100 no-underline hover:text-red-600 py-2 px-4 link"
+              class="inline-block text-gray-100 no-underline hover:text-red-600 py-2 mx-4 link"
               href="/informacja-gospodarcza">Informacja Gospodarcza</a
             >
           </li>
@@ -230,14 +242,14 @@ import { Image } from '@astrojs/image/components';
   </div>
 </nav>
 
-<script defer >
+<script defer>
   let scrollcheck = 1000;
   document.getElementById("nav-toggle").onclick = function () {
     document.getElementById("nav-content").classList.toggle("hidden");
     document.getElementById("mynav").classList.add("bg-gray-900");
-    if(scrollcheck === 1000){
+    if (scrollcheck === 1000) {
       scrollcheck = 0;
-    }else{
+    } else {
       scrollcheck = 1000;
     }
   };

@@ -3,9 +3,9 @@ ___
 
 ## Project Structure
 
-Astro looks for `.astro` or `.md` files in the `src/` directory. Each page is exposed as a route based on its file name.
+`.astro` files are in the `src/` directory. Each page is exposed as a route based on its file name.
 
-Any static assets, like images, can be placed in the `public/` directory.
+Any static assets, like images, are placed in the `public/` directory.
 
 ## Commands
 
@@ -19,7 +19,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`      | Preview your build locally, before deploying       |
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
 | `npm run astro --help` | Get help using the Astro CLI                       |
-
-## 👀 Want to learn more?
-
-Feel free to check [Astro documentation](https://docs.astro.build) or jump into [Discord server](https://astro.build/chat).

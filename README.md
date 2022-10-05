@@ -1,4 +1,5 @@
 ## I have no idea aboud webdev. My gf's mom asked me if i can make website for her, i said of course, so here it is.
+I realize now that this repo is kind of a mess however i learned a lot from this and if i was ever to make another website/app i'd know much more about how to do things more proper
 ___
 
 ## Project Structure

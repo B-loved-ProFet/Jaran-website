@@ -10,20 +10,19 @@ import { Image } from "@astrojs/image/components";
 <!DOCTYPE html>
 <html lang="pl">
   <head>
-        <link rel="icon" type="image/ico" sizes="16x16" href="/favicon.ico">
-  <!-- Google tag (gtag.js) -->
-  <script
-    type="text/partytown"
-    src="https://www.googletagmanager.com/gtag/js?id=G-V3QBP09EY8"
-  ></script>
-  <script type="text/partytown">
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-V3QBP09EY8");
-  </script>
+    <script
+      type="text/partytown"
+      src="https://www.googletagmanager.com/gtag/js?id=G-V3QBP09EY8"
+    ></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-V3QBP09EY8");
+    </script>
+    <link rel="icon" type="image/ico" sizes="16x16" href="/favicon.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
@@ -91,7 +90,7 @@ import { Image } from "@astrojs/image/components";
                   <slot />
                 </div>
               </section>
-              <div class=" w-full mx-auto pt-24">
+              <div class="w-full mx-auto pt-24">
                 <Form />
               </div>
             </div>

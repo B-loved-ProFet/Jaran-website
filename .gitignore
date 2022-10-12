@@ -17,4 +17,5 @@ pnpm-debug.log*
 .env.production
 
 # macOS-specific files
-.DS_Store
+.DS_Storesendgrid.env
+sendgrid.env
